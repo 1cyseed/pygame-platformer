@@ -178,13 +178,6 @@ def main():
                 character.rect.top = platforms[top_collisions[0]].rect.bottom + 1
 
 
-
-
-
-
-
-
-
         keys = pygame.key.get_pressed()
 
 
