@@ -26,9 +26,9 @@ class Character(pygame.sprite.Sprite):
         self.x_speed = 0
         self.y_speed = 0
 
-        self.hit_wall_right = False
-        self.hit_wall_left = False  
-        self.touchingPlat = False
+        #self.hit_wall_right = False
+        #self.hit_wall_left = False  
+        #self.touchingPlat = False
 
 
     def update(self):
@@ -122,6 +122,7 @@ def main():
     all_sprites_list.add(character)
     all_sprites_list.add(enemy)
 
+
     for plat in platforms:
         all_sprites_list.add(plat)
     coords = ()
@@ -153,6 +154,7 @@ def main():
         bot_collisions = hitbox_bot.rect.collidelistall(platforms)
         rt_collisions = hitbox_rt.rect.collidelistall(platforms)
         lt_collisions = hitbox_lt.rect.collidelistall(platforms)
+        
        
 
 
